@@ -19,10 +19,10 @@
   border: 1px solid black;
   
   padding-right:1%;
-  margin-left:20%;
   background-color:white;
   
 }
+
 
 
 </style>
@@ -36,25 +36,27 @@
   $registros = mysqli_query($conexion, "select nombre,apellido1,apellido2,DNI,Nacimiento,email,Localidad,sexo,username
                         from alumnos") or
     die("Problemas en el select:" . mysqli_error($conexion));
-
+    ?>
+    <table class="default">
+    <tr>
+  
+      <th>Nombre</th>
+      <th>apellido1</th>
+      <th>apellido2</th>
+      <th>DNI</th>
+      <th>Nacimiento</th>
+      <th>email</th>
+      <th>Localidad</th>
+      <th>sexo</th>
+      <th>username</th>
+  
+    </tr>
+    <?php
   while ($reg = mysqli_fetch_array($registros)) {
     
     
 ?>
-    <table class="default">
-  <tr>
 
-    <th>Nombre</th>
-    <th>apellido1</th>
-    <th>apellido2</th>
-    <th>DNI</th>
-    <th>Nacimiento</th>
-    <th>email</th>
-    <th>Localidad</th>
-    <th>sexo</th>
-    <th>username</th>
-
-  </tr>
   
   <tr>
     
@@ -67,17 +69,24 @@
     <td><?php echo $reg['Localidad']?></td>
     <td><?php echo $reg['sexo']?></td>
     <td><?php echo $reg['username']?></td>
-
+    <?php
+    echo "<td> <a href='../Eliminacion/Delete.php?email=$reg[email]'>
+    <img src='../goma.jpg' alt='Borar' width='30'/>
+    </a> </td>";
+    echo "<td> <a href='../modificar/modificacion.php?emailEditar=$reg[email]'>
+    <img src='../lapiz.jpg' alt='Editar' width='30'/>
+    </a> </td>";
+    ?>
   </tr>
 
-</table>
+
 <?php
     echo "</div>";
   }
 
   mysqli_close($conexion);
   ?>
-
+</table>
 </body>
 
 </html>
