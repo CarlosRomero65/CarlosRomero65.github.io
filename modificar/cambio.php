@@ -34,15 +34,8 @@
     $sexo= $_REQUEST['sexo'];
     $username = $_REQUEST['username'];
 
-    $numero=substr($nif, 0,8);
-    $letra=substr($nif, -1);
-    $numeros=intval($numero);
-    $cadena="TRWAGMYFPDXBNJZSQVHLCKE";
-    $resto=$numeros%23;
-  
-    if($letra!=$cadena[$resto]){
-      $nif='Erroneo';
-    }
+
+
     
 mysqli_query($conexion, "update alumnos
                         set nombre='$nombre',
@@ -57,7 +50,6 @@ mysqli_query($conexion, "update alumnos
                         
                     where email='$_REQUEST[email]'") or
     die("Problemas en el select:" . mysqli_error($conexion));
-header('Location:listadoAlumnos.php');
 
     ?>
 

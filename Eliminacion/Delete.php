@@ -39,6 +39,14 @@
   mysqli_close($conexion);
   ?>
   <img src="over.gif" alt="Trulli" width="500" height="333">.<br>
+  <body>
+    <div>
+    <form action="../Formularios.html" method="post">
+    <input type="submit" value="Regresar">
+    </form>
+    </div>
+    
+</body>
 </body>
 
 </html>

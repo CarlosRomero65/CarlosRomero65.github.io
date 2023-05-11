@@ -80,25 +80,25 @@
     ¿Cual es tu genero?
     <select id="sexo" name="sexo">
   <?php 
-        if ($reg['sexo']=='1'){
-          echo "<option value='1' selected>Hombre</option>";
+        if ($reg['sexo']=='Hombre'){
+          echo "<option value='Hombre' selected>Hombre</option>";
         }else{
-          echo "<option value='1'>Hombre</option>";
+          echo "<option value='Hombre'>Hombre</option>";
         }
-        if ($reg['sexo']=='2'){
-          echo "<option value='2' selected>Mujer</option>";
+        if ($reg['sexo']=='Mujer'){
+          echo "<option value='Mujer' selected>Mujer</option>";
         }else{
-          echo "<option value='2'>Mujer</option>";
+          echo "<option value='Mujer'>Mujer</option>";
         }
-        if ($reg['sexo']=='3'){
-          echo "<option value='3' selected>Paloma tactica</option>";
+        if ($reg['sexo']=='Paloma tactica'){
+          echo "<option value='Paloma tactica' selected>Paloma tactica</option>";
         }else{
-          echo "<option value='3'>Paloma tactica</option>";
+          echo "<option value='Paloma tactica'>Paloma tactica</option>";
         }
-        if ($reg['sexo']=='4'){
-          echo "<option value='4' selected>otros</option>";
+        if ($reg['sexo']=='otros'){
+          echo "<option value='otros' selected>otros</option>";
         }else{
-          echo "<option value='4'>otros</option>";
+          echo "<option value='otros'>otros</option>";
         }
         ?>
   Cuenta de twitter:

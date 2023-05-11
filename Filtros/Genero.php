@@ -11,18 +11,19 @@
 
 
   div {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
     background-color: #00ffa6;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 1%;
   }
-  p{
-    background-color: white;
-    margin-top: -8%;
-  }
+  table, th, td {
+  border: 1px solid black;
+  
+  padding-right:1%;
+  background-color:white;
+  
+}
+
+
 
 </style>
 <body>
@@ -32,43 +33,62 @@
   $conexion = mysqli_connect("localhost", "root", "", "base1") or
     die("Problemas con la conexión");
 
-  $registros = mysqli_query($conexion, "select nombre,apellido1,apellido2,DNI,Nacimiento,email,Localidad,sexo,username
-                        from alumnos") or
-    die("Problemas en el select:" . mysqli_error($conexion));
+    $sexo2 = $_REQUEST['sexo'];
 
+  $registros = mysqli_query($conexion, "select nombre,apellido1,apellido2,DNI,Nacimiento,email,Localidad,sexo,username
+                        from alumnos where sexo='$sexo2'") or
+    die("Problemas en el select:" . mysqli_error($conexion));
+    ?>
+    <table class="default">
+    <tr>
+  
+      <th>Nombre</th>
+      <th>apellido1</th>
+      <th>apellido2</th>
+      <th>DNI</th>
+      <th>Nacimiento</th>
+      <th>email</th>
+      <th>Localidad</th>
+      <th>sexo</th>
+      <th>username</th>
+  
+    </tr>
+    <?php
   while ($reg = mysqli_fetch_array($registros)) {
-    echo "<div>";
-    echo "<hr>";
-    echo "<p>"."Nombre:" . $reg['nombre'] . "</p>"."<br>";
-    echo "<hr>";
-    echo "<p>"."apellido1:" . $reg['apellido1'] . "</p>". "<br>";
-    echo "<hr>";
-    echo "<p>"."apellido2:" . $reg['apellido2'] . "</p>". "<br>";
-    echo "<hr>";
-    echo "<p>"."DNI:" . $reg['DNI'] . "</p>". "<br>";
-    echo "<hr>";
-    echo "<p>"."Nacimiento:" . $reg['Nacimiento'] . "</p>". "<br>";
-    echo "<hr>";
-    echo "<p>"."email:" . $reg['email'] . "</p>". "<br>";
-    echo "<hr>";
-    echo "<p>"."Localidad:" . $reg['Localidad'] . "</p>". "<br>";
-    echo "<hr>";
-    echo "<p>"."sexo:" . $reg['sexo'] . "</p>". "<br>";
-    echo "<hr>";
-    echo "<p>"."username:" . $reg['username'] . "</p>". "<br>";
-    echo "<br>";
+    
+    
+?>
+
+  
+  <tr>
+    
+    <td><?php echo $reg['nombre']?></td>
+    <td><?php echo $reg['apellido1']?></td>
+    <td><?php echo $reg['apellido2']?></td>
+    <td><?php echo $reg['DNI']?></td>
+    <td><?php echo $reg['Nacimiento']?></td>
+    <td><?php echo $reg['email']?></td>
+    <td><?php echo $reg['Localidad']?></td>
+    <td><?php echo $reg['sexo']?></td>
+    <td><?php echo $reg['username']?></td>
+    <?php
     echo "<td> <a href='../Eliminacion/Delete.php?email=$reg[email]'>
     <img src='../goma.jpg' alt='Borar' width='30'/>
     </a> </td>";
     echo "<td> <a href='../modificar/modificacion.php?emailEditar=$reg[email]'>
     <img src='../lapiz.jpg' alt='Editar' width='30'/>
     </a> </td>";
+    ?>
+  </tr>
+
+
+<?php
     echo "</div>";
   }
 
   mysqli_close($conexion);
   ?>
-
+</table>
 </body>
 
 </html>
