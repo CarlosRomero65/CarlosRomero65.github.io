@@ -41,15 +41,6 @@
   <img src="icegif-3602.gif" alt="Trulli" width="500" height="333">.<br>
   <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">VER</button>
 
-  <body>
-    <div>
-    <form action="../Formularios.html" method="post">
-    <input type="submit" value="Regresar">
-    </form>
-    </div>
-    
-</body>
-
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
       <header class="w3-container w3-teal"> 

@@ -57,12 +57,7 @@
     echo "<hr>";
     echo "<p>"."username:" . $reg['username'] . "</p>". "<br>";
     echo "<br>";
-    echo "<td> <a href='../Eliminacion/Delete.php?email=$reg[email]'>
-    <img src='../goma.jpg' alt='Borar' width='30'/>
-    </a> </td>";
-    echo "<td> <a href='../modificar/modificacion.php?emailEditar=$reg[email]'>
-    <img src='../lapiz.jpg' alt='Editar' width='30'/>
-    </a> </td>";
+    
     echo "</div>";
   }
 
