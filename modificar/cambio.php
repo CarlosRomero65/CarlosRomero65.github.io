@@ -51,7 +51,16 @@ mysqli_query($conexion, "update alumnos
                     where email='$_REQUEST[email]'") or
     die("Problemas en el select:" . mysqli_error($conexion));
 
+      
     ?>
+
+    <h1>Felicidades has relizado los cambios de este usuario correctamente</h1>
+   
+    <img src=" 4mlG.gif" alt="Trulli" width="500" height="333">.<br>
+    
+    <form action="../Formularios.html" method="post">
+    <input type="submit" value="Regresar">
+    </form>
 
 </body>
 
