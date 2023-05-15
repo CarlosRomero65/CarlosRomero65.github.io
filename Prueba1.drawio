@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-15T07:05:02.329Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/97.0.0.0 (Edition std-1)" etag="gnMGddBu3MKAoMNJyG-A" version="21.2.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-05-15T07:07:58.354Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/97.0.0.0 (Edition std-1)" etag="MO7dKtCG_qwF9SGGt3SU" version="21.2.9" type="github" pages="2">
   <diagram name="Página-1" id="ewK1FqAB8NlVOUjzMfR2">
     <mxGraphModel dx="753" dy="471" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -109,25 +109,25 @@
         <mxCell id="3Jd0pZ9dKWfFowgYo949-11" value="Oferta proveedor" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="700" y="270" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="3Jd0pZ9dKWfFowgYo949-12" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Jd0pZ9dKWfFowgYo949-7" target="3Jd0pZ9dKWfFowgYo949-6">
+        <mxCell id="3Jd0pZ9dKWfFowgYo949-12" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Jd0pZ9dKWfFowgYo949-7" target="3Jd0pZ9dKWfFowgYo949-6">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="370" y="290" as="sourcePoint" />
             <mxPoint x="530" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3Jd0pZ9dKWfFowgYo949-13" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Jd0pZ9dKWfFowgYo949-8" target="3Jd0pZ9dKWfFowgYo949-6">
+        <mxCell id="3Jd0pZ9dKWfFowgYo949-13" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Jd0pZ9dKWfFowgYo949-8" target="3Jd0pZ9dKWfFowgYo949-6">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="175" y="280" as="sourcePoint" />
             <mxPoint x="285" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3Jd0pZ9dKWfFowgYo949-14" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Jd0pZ9dKWfFowgYo949-10" target="3Jd0pZ9dKWfFowgYo949-9">
+        <mxCell id="3Jd0pZ9dKWfFowgYo949-14" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Jd0pZ9dKWfFowgYo949-10" target="3Jd0pZ9dKWfFowgYo949-9">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="185" y="290" as="sourcePoint" />
             <mxPoint x="295" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3Jd0pZ9dKWfFowgYo949-15" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3Jd0pZ9dKWfFowgYo949-11" target="3Jd0pZ9dKWfFowgYo949-9">
+        <mxCell id="3Jd0pZ9dKWfFowgYo949-15" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3Jd0pZ9dKWfFowgYo949-11" target="3Jd0pZ9dKWfFowgYo949-9">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="195" y="300" as="sourcePoint" />
             <mxPoint x="680" y="210" as="targetPoint" />
